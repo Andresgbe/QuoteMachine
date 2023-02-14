@@ -1,0 +1,80 @@
+
+body, html {
+    margin: 0;
+  }
+
+  .contenedor {
+    background: crimson;
+    height: 100vh;
+    display: table-cell;
+   /* vertical-align: middle; */
+    display: block;
+  } 
+  
+  /*
+  .centrado {
+    background: yellow;
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+  } */
+
+   /*.test {
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+  } */
+
+  .box {
+    display: inline-block;
+    padding: 0px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    border-radius: 3px;
+    height: 350px;
+    width: 750px;
+    background: white;
+}
+
+    .quote {
+        font-size: 35px;
+        padding: 10px 5px 0px 5px;
+        
+    }
+
+    .author {
+        margin-top: 0px;
+        margin-left: 500px;
+    }
+
+    .social-media {
+     /*   display: inline-block; */
+        margin-left: 20px;
+        float: left;
+        height: 50px;
+        width: 75px;
+    }
+
+    .quote-button {
+      height: 50px;
+      width:  150px;
+      float: right;
+      margin-right: 70px;
+    }
+
+    .buttons {
+      margin-top: 45px;
+      border: 0px;
+    }

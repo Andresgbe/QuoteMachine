@@ -1,0 +1,24 @@
+.whitebox {
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 450px;
+    padding: 40px 50px;
+    align-items: center;
+    margin: 0 auto;
+    position: auto;
+    display: table;
+}
+
+.primary {
+    text-align: center;
+    vertical-align: baseline;
+    margin: auto;
+    padding: 0;
+}
+
+div { 
+    position: relative;
+    z-index: 2;
+    display: block;
+}
+
