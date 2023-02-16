@@ -26,4 +26,20 @@ export function Frases() {
      ]
 }
 
+export function Autores() {
+  return [
+    "Anonymous.",
+    "Anonymous",
+    "Socrates",
+    "Stephen Hawking",
+    "Kevin Kelly",
+    "Christian Laus",
+    "Anonymous",
+    "Anonymous",
+    "Carlos Slim",
+    "Iosif Stalin",
+    "Anonymous",
+  ]
+}
+
 

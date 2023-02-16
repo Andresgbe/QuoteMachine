@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+
+:root {
+    --bg-color: #303134;
+    --color-text: #cad2db;
+    --box-shadow: 5px 5px 5px 0 rgb(32,33,36,1),
+                  -1px -1px 4px 0 rgb(32,33,36,1);
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+    font-family: 'Eczar', serif;
+}
+
+.container {
+    width: 30%;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px 0 rgb(32, 33, 36,1),
+                -1px -1px 3px 0 rgb(32, 33, 36,1);
+    border-radius: 1rem;
+    text-align: center;
+    color: var(--color-text);
+    padding: 1rem;
+    background-color: var(--bg-color);
+}
+
+.contenedor {
+    /* background-color: var(--bg-color); */
+    display: block;
+    display: table-cell;
+    height: 100vh;
+}
+
+.box {
+    display: inline-block;
+    padding: 25px 10px 10px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    border-radius: 1rem;
+    height: 350px;
+    width: 750px;
+    background: white;
+    box-shadow: 5px 5px 5px 0 rgb(32, 33, 36,1),
+    -1px -1px 3px 0 rgb(32, 33, 36,1);
+    color: var(--bg-color);
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+
+
+
+
+.btns * {
+    background-color: var(--bg-color);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+}
+
+.color-hex {
+
+    font-size: 0;
+    margin: 2rem 0 2rem 0;
+}
+
+.btns * {
+    outline: none;
+    border: none;
+    color: var(--color-text);
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+@media screen and (max-width:750px) {
+    .container {
+        width: 90%;
+    }
+}
+
+
+.quote {
+    font-size: 35px;
+    padding: 10px 5px 0px 5px;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.author {
+    margin-top: 25px;
+    margin-left: 500px;
+}
+
+.social-media {
+ /*   display: inline-block; */
+    margin-left: 20px;
+    float: left;
+    height: 50px;
+    width: 75px;
+}
+
+.quote-button {
+  height: 50px;
+  width:  150px;
+  float: right;
+  margin-right: 70px;
+}
+
+.buttons {
+  margin-top: 45px;
+  border: 0px;
+  border-radius: 1rem;
+}
+
+.logo {
+    width: 37px;
+    height: 37px;
+    text-align: center;
+    margin-top: 5px;
+}
+  
