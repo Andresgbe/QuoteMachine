@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// import '../styles.css';
 import '../background-styles.css';
 
 const $generate = document.getElementById('generate'),

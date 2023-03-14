@@ -1,13 +1,11 @@
 import { useState } from 'react';
-// import '../styles.css';
-import '../background-styles.css';
-import { Frases } from './Frases';
-import { Autores } from './Frases';
+import '../Styles/background-styles.css';
+import { Frases } from './Phrases';
+import { Autores } from './Phrases';
 import twitter from './twitter.png';
 import facebook from './facebook.png';
 
-var authorActual = '',
-    quoteActual = '';
+
 
 const $generate = document.getElementById('generate'),
       $reset = document.getElementById('reset'),
@@ -34,14 +32,13 @@ function randomNumber() {
     return Math.floor(Math.random() * hex.length)
 }
 
-
-
 export function Quotes() {
-    const Generar = () => {
+    const Generate = () => {
         return Math.floor(Math.random()*11);
     }
 
     let x = 0;
+
     const [title, setTitle] = useState(Frases()[x]);
     const [autor, setAutor] = useState(Autores()[x]);
 
@@ -49,25 +46,16 @@ export function Quotes() {
     let autorr = '';
 
     const changeTitle = () => {
-        Generar();
-        x = Generar();
+        x = Generate();
         phrase  = Frases()[x];
         setTitle(phrase);
         autorr  = Autores()[x];
         setAutor(autorr);
     }
 
-
-   
-   
-    authorActual = autorr;
-    quoteActual = phrase;
-
-  
     
-
     return (
-        <div id='wrapper' className='contenedor'>
+        <div id='wrapper' className='container'>
             <div id='quote-box' className='box'>
                 <div id='quote-text' className='quote'>
                     <h3>{title}</h3>
@@ -78,20 +66,19 @@ export function Quotes() {
                 <div className='buttons'>
                     
                     <button className='social-media buttons-especify'>
-                        <a
+                        <a href=''
                             id='tweet-quote'
-                            target='_top'
-                            href='twitter.com/intent/tweet'
-                        >
+                            target='_top'>
 
-                        <img className="logo" src={twitter} />
+                        <img className="logo" src={twitter} alt='' />
                         </a>
                         </button> 
-                        <button quote='faceboo-quote' className='social-media buttons-especify'>
+                        <button quote='facebook-quote' className='social-media buttons-especify'>
                             <a
-                                id='tweet-quote'
-                                target='_top'>
-                                <img 
+                                id='tumblr-quote'
+                                target='_top'
+                               > 
+                               <img alt=''
                                     className='logo' 
                                     src = {facebook}/>
                           </a>
@@ -103,7 +90,6 @@ export function Quotes() {
             </div>
         </div>
     );
-
 }
 
 
